@@ -1,0 +1,8 @@
+/**
+ * 客户端本地化工具
+ * 当前库依赖第三方库： jQuery（v1.7.x）。详细了解：http://jquery.com/
+ * @author Chihpeng Tsai(470597142@qq.com)
+ * git: https://github.com/iiTsai
+ * osc: http://my.oschina.net/tsai
+ */
+eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('3 o={U:\'0.1.0\',p:\'x-y\',7:O,M:4(a){2.p=a||\'x-y\';6 2},r:4(){3 a=I.F;6(a.S||a.K)},7:4(a){2.7=a;6 2},J:4(a){E.f=a;6 2},l:4(a,b,c){3 s=c||2.7,9=[];5(s){9=s.g(\'#\'+a)}e{9=$(\'#\'+a)}5(9[0]){m(3 i=0,j=9.h;i<j;i++){3 d=$(9[i]);5(d.A(0).B=="C"){d.g(\'D\').V(4(i){$(2).n(b[i])})}e{d.G(b)}}}6 2},z:4(a,b,c){3 s=c||2.7;5(s){s.g(\'#\'+a).t(\'f\',b)}e{$(\'#\'+a).t(\'f\',b)}6 2},u:4(a,b,c){3 s=c||2.7;5(s){s.g(\'#\'+a).w(b)}e{$(\'#\'+a).w(b)}6 2},L:4(a,b){3 c=2,s=b||c.7;m(3 k N a){3 v=a[k];5((P v=="Q")&&!$.R(v)){5(v.n){c.l(k,v.n,s)}5(v.f){c.z(k,v.f,s)}5(v.q){c.u(k,v.q,s)}}e{c.l(k,v,s)}}6 2},T:4(){3 s=\'\';5(8.h){5(8.h==1){6 8[0]}s=8[0];m(3 i=1,j=8.h;i<j;i++){s=s.H(\'{\'+(i-1)+\'}\',8[i])}}6 s}};(4(){o.p=o.r()})();',58,58,'||this|var|function|if|return|scope|arguments|els|||||else|title|find|length||len|||for|text|itl|lang|value|getLang||attr|lv||val|zh|CN|lt|get|tagName|SELECT|option|document|navigator|html|replace|window|setTitle|userLanguage|l10n|init|in|null|typeof|object|isArray|language|format|version|each'.split('|'),0,{}))

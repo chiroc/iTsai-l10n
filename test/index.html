@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>iTsai-l10n 客户端本地化工具</title>
+    <script src="jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="../src/iTsai-l10n.js" type="text/javascript"></script>
+    <script src="../src/i18n/ui-zh-CN.js" type="text/javascript"></script>
+    <style type="text/css">
+        *{
+            line-height: 1.5em;
+            font-size: 14px;;
+        }
+    </style>
+</head>
+<body>
+Set Language: <a href="javascript:setLang('zh-CN');">zh-CN</a>&nbsp;&nbsp;
+<a href="javascript:setLang('en');">en</a>&nbsp;&nbsp;
+<a href="javascript:setLang('zh-TW');">zh-TW</a>&nbsp;&nbsp;
+<hr/>
+<form id="container" action="/" method="post">
+   <div id="title" style="font-size: 2em; "></div>
+   <label id="l_age"></label><input id="age" name="age"/><span id="note" style="color: #f60;"></span> <br/>
+    <label id="l_grade"></label><select id="lbl-select">
+        <option value="0"></option>
+        <option value="1"></option>
+        <option value="2"></option>
+    </select>
+    <br/>
+    <label id="lbl-bitrate"></label> --
+    <label id="lbl-bitrate-1"></label> --
+    <label id="lbl-bitrate-2"></label><hr/>
+    <div id="txt-warning" style="border:2px #8b4513 solid;height: 200px;width: 400px;"></div>
+   <input type="button" id="btn-login"/>
+</form>
+<br/>
+ <div style="color: #f00;border: 1px solid #ddd;">当前示例应运行在WEB服务器环境中</div>
+<script type="text/javascript">
+$(document).ready(function(){
+    setLang('zh-CN');
+});
+function setLang(code){
+    $.getScript("../src/i18n/ui-" + code + ".js", function() {
+        itl.l10n(lang.demo, $('#container'));//初始化container容器语言
+        itl.setTitle(lang.pageTitle);//设置耐碱标题
+        $('#note').html(itl.format(lang._.intRange,0,100));
+    });
+}
+</script>
+</body>
+</html>
